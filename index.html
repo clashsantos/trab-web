@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>PassMaker</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<main>
+			<div>
+				<section>
+					<h1>PassMaker</h1>
+					<p>Crie senhas para suas contas</p>
+				</section>
+				<section>
+					<div>
+						<span>Range</span>
+						<input id="numRange" type="range" min="1" max="30" value="12" />
+						<span id="showRange"></span>
+					</div>
+					<div>
+						<span>ABC</span>
+						<input id="maiusculo" type="checkbox" />
+					</div>
+					<div>
+						<span>abc</span>
+						<input checked id="minusculo" type="checkbox" />
+					</div>
+					<div>
+						<span>123</span>
+						<input id="numero" type="checkbox" />
+					</div>
+					<div>
+						<span>#@&</span>
+						<input id="caracter" type="checkbox" />
+					</div>
+				</section>
+				<section id="play">
+					<div id="go-container">
+						<div id="go">Gerar</div>
+					</div>
+					<div id="senha"></div>
+					<button id="copyButton">Copiar</button>
+					<div id="copiado">Copiado</div>
+				</section>
+			</div>
+		</main>
+	</body>
+	<script src="script.js"></script>
+</html>

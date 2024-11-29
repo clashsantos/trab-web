@@ -1,0 +1,130 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	font-style: none;
+	border-style: none;
+	outline: none;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type="number"] {
+	appearance: textfield;
+}
+
+body {
+	background-color: #ecedef;
+}
+main {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+}
+main section:first-child {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+main section:nth-child(2) {
+	width: 250px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+main > div {
+	height: 450px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+	background: #fcfcfc;
+	padding: 30px 50px;
+	border-radius: 20px;
+	box-shadow: 0 0 10px 5px #ccccccaa;
+}
+
+#senha {
+	height: 35px;
+	width: 330px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#go-container {
+	height: 35px;
+	display: flex;
+	align-items: end;
+}
+#go {
+	user-select: none;
+	cursor: pointer;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 35px;
+	width: 100px;
+}
+#go:hover {
+	height: 33px;
+}
+#go:active {
+	height: 30px;
+}
+input,
+button {
+	cursor: pointer;
+	background: transparent;
+}
+#play {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	align-items: center;
+}
+#copiado {
+	height: 10px;
+	display: none;
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+#copyButton {
+	font-size: 1.2rem;
+}
+#copyButton::after {
+	display: block;
+	content: "";
+	width: 0;
+	height: 1px;
+	background: #000;
+	margin: 0 auto;
+	transform-origin: center;
+	transition: width 0.3s ease;
+}
+
+#copyButton:hover::after {
+	width: 100%;
+}
